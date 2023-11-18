@@ -8,7 +8,7 @@ import {
   StyleSheet,
   TextInput,
   KeyboardAvoidingView,
-  Platform,
+
 } from 'react-native';
 
 const Login = ({ navigation }) => {
@@ -21,9 +21,7 @@ const Login = ({ navigation }) => {
       </View>
 
       <KeyboardAvoidingView
-        
-        style={{ display: 'flex', flexDirection: 'column', height: '40%', width: '90%', marginTop: '3%', justifyContent: 'space-evenly',alignItems:"center" }}
-      >
+        style={{ display: 'flex', flexDirection: 'column', height: '40%', width: '90%', marginTop: '3%', justifyContent: 'space-evenly',alignItems:"center" }}>
         <TextInput style={styles.input} placeholder="Enter your Id" />
         <TextInput style={styles.input} placeholder="Enter Password" secureTextEntry={true} />
         <TouchableOpacity onPress={() => navigation.navigate('Tabs')} style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'purple', height: '22%', borderRadius: 5 ,width:"98%"}}>

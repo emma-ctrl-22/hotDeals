@@ -12,7 +12,7 @@ const TabTwo = ({navigation}) => {
            <TextInput 
            placeholder="Hot Deals "/>
           </View>
-          <PencilSquareIcon onPress={()=>navigation.navigate('')} color='dodgerblue'/>
+          <PencilSquareIcon onPress={()=>navigation.navigate('Add Deal')} color='dodgerblue'/>
           <ArrowPathIcon color="dodgerblue"/>
       </View>
       <ScrollView contentContainerStyle={{
