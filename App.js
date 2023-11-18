@@ -17,7 +17,7 @@ export default function App() {
         <Stack.Screen  options={{ headerShown: false }} name="Tabs" component={Tabs}/>
         <Stack.Screen name="ShopScreen" component={ShopScreen}/>
         <Stack.Screen name="Hot Deal" component={HotDealScreen}/>
-        <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen  options={{ headerShown: false }} name="Login" component={Login}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
