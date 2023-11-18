@@ -5,9 +5,9 @@ import HotDeal from '../components/HotDeal';
 
 const TabTwo = () => {
   return (
-    <SafeAreaView style={{flex:1,justifyContent:'space-between',alignItems:'center'}}>
-      <View style={{flexDirection:'row',marginLeft:7,padding:3,marginTop:"1%",justifyContent:'center',alignItems:'center'}}>
-          <View style={{flexDirection:'row',flex:1,backgroundColor:"#c5c6d0",height:43,borderRadius:2,alignItems:'center',gap:6,paddingLeft:13}}>
+    <SafeAreaView style={{flex:1,justifyContent:'space-between'}}>
+      <View style={{flexDirection:'row',marginLeft:7,padding:3,marginTop:"1%",justifyContent:'center',alignItems:'center',height:"8%"}}>
+          <View style={{flexDirection:'row',flex:1,backgroundColor:"#c5c6d0",height:"100%",borderRadius:2,alignItems:'center',gap:6,paddingLeft:13}}>
             <MagnifyingGlassIcon color='grey' size={20}/>
            <TextInput 
            placeholder="Hot Deals "/>
@@ -15,13 +15,17 @@ const TabTwo = () => {
           <AdjustmentsVerticalIcon color='dodgerblue'/>
       </View>
       <ScrollView contentContainerStyle={{
-          padding: 10,
+        width:"100%",
           alignItems: 'center',
           height: '100%', // Set the height to 100% of the screen
         }}
         showsVerticalScrollIndicator={false}>
-         <TouchableOpacity>
-            <HotDeal/>
+         <TouchableOpacity style={{width:"47%",height:"30%"}}>
+            <HotDeal ImageUrl="https://deepcaves.world/images/deepcaves.jpg"
+             productName="Iphone 7"
+             Price="1000"
+             Location="MA BEADIAKO"
+            />
          </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
