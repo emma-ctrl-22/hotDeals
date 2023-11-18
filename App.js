@@ -7,6 +7,7 @@ import Tabs from './Tabs/layout';
 import ShopScreen from './screens/ShopScreen';
 import HotDealScreen from './screens/HotDealScreen';
 import Login from './screens/Login';
+import AddDeal from './screens/AddDeal'
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="ShopScreen" component={ShopScreen}/>
         <Stack.Screen name="Hot Deal" component={HotDealScreen}/>
         <Stack.Screen  options={{ headerShown: false }} name="Login" component={Login}/>
+        <Stack.Screen name="Add Deal" component={AddDeal}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
