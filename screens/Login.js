@@ -1,34 +1,49 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity,StyleSheet ,KeyboardAvoidingView} from 'react-native'
-import React from 'react'
-import { TextInput } from 'react-native-gesture-handler'
+import React from 'react';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Image,
+  TouchableOpacity,
+  StyleSheet,
+  TextInput,
+  KeyboardAvoidingView,
+  Platform,
+} from 'react-native';
 
-const Login = ({navigation}) => {
+const Login = ({ navigation }) => {
   return (
-    <SafeAreaView style={{flex:1,alignItems:"center",display:"flex",justifyContent:"space-evenly"}}>
-        <View style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",width:"70%",height:"40%",marginTop:"5%"}}>
-            <Image style={{}}  source={require('../assets/vvulogo.png')}/>
-            <Text style={{fontSize:20}}>VVU MARKET</Text>       
-            <Text>Best Campus Shopping Experience</Text>
-        </View>
+    <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'space-evenly' }}>
+      <View style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '70%', height: '40%', marginTop: '5%' }}>
+        <Image style={{}} source={require('../assets/vvulogo.png')} />
+        <Text style={{ fontSize: 20 }}>VVU MARKET</Text>
+        <Text>Best Campus Shopping Experience</Text>
+      </View>
 
-        <KeyboardAvoidingView style={{display:"flex",flexDirection:"column",height:"40%",width:"90%",marginTop:"3%",justifyContent:"space-evenly"}}>
-            <TextInput style={styles.Input} placeholder='Enter your Id'/>
-            <TextInput placeholder='Enter Password'/>
-            <TouchableOpacity onPress={()=>navigation.navigate('Tabs')} style={{alignItems:"center",justifyContent:"center",backgroundColor:"purple",height:'20%',borderRadius:5}}>
-                <Text style={{color:"white",fontSize:18}}>Login</Text>
-            </TouchableOpacity>
-        </KeyboardAvoidingView>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={{ display: 'flex', flexDirection: 'column', height: '40%', width: '90%', marginTop: '3%', justifyContent: 'space-evenly',alignItems:"center" }}
+      >
+        <TextInput style={styles.input} placeholder="Enter your Id" />
+        <TextInput style={styles.input} placeholder="Enter Password" secureTextEntry={true} />
+        <TouchableOpacity onPress={() => navigation.navigate('Tabs')} style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'purple', height: '20%', borderRadius: 5 ,width:"95%"}}>
+          <Text style={{ color: 'white', fontSize: 18 }}>Login</Text>
+        </TouchableOpacity>
+      </KeyboardAvoidingView>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-    Input: {
-      width:"80%",
-      height:"20%",
-     
-    },
-  });
-  
+  input: {
+    width: '90%',
+    height: '20%',
+    borderWidth: 1,
+    borderRadius: 5,
+    borderColor:"purple",
+    marginBottom: 10,
+    padding: 10,
+  },
+});
 
-export default Login
+export default Login;
