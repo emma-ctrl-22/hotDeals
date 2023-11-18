@@ -14,7 +14,7 @@ const Homescreen = ({navigation}) => {
         }}
         showsVerticalScrollIndicator={false}
       >
-        <TouchableOpacity style={{backgroundColor: "#f0f0f0", width: "95%", height: "40%", display: "flex", flexDirection: "column"}}
+        <TouchableOpacity style={{backgroundColor: "#f0f0f0", width: "95%", height: "40%", display: "flex", flexDirection: "column",borderRadius:3}}
           onPress={()=>navigation.navigate("ShopScreen",{
             title: 'JJ NORTEY',
             ImageUrl: 'https://deepcaves.world/images/deepcaves.jpg',
