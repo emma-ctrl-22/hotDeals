@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, SafeAreaView, ScrollView, Image ,TouchableOpacity} from 'react-native';
 import Store from '../components/Store';
-import{useRoute } from '@react-navigation/native'
 
 const Homescreen = ({navigation}) => {
    

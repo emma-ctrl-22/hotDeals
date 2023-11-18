@@ -7,17 +7,22 @@ const ShopScreen = () => {
   const { title, ImageUrl, description, Status } = route.params || {};
 
   return (
-    <SafeAreaView style={{ flex: 1,alignItems:"center" }}>
-      <View style={{ backgroundColor: "dodgerblue", height: "30%", width: "100%" }}>
-        <Image style={{height:"100%",width:'100%'}} source={{ uri: ImageUrl }} />
+    <SafeAreaView style={{ flex: 1,  }}>
+      <View style={{ backgroundColor: 'dodgerblue', height: '20%', width: '100%' }}>
+        <Image style={{ height: '100%', width: '100%' }} source={{ uri: ImageUrl }} />
       </View>
-      <View style={{display:'flex',flexDirection:"row"}}>
-      <Text>{title}</Text>
-      <Text>{Status}</Text>
+      <View style={{ display: 'flex', flexDirection: 'row' }}>
+        <Text>{title}</Text>
+        <Text>{Status}</Text>
       </View>
       <Text>{description}</Text>
-      <ScrollView contentContainerStyle={{height:'50%',width:"100%",backgroundColor:"dodgerblue"}}>
-
+      <ScrollView
+        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"dodgerblue" ,width:"100%"}}
+        horizontal={true} // Set the horizontal prop to true
+        showsHorizontalScrollIndicator={false}//this makes the scroll inidcator invisible
+      >
+        <Text>ScrollView Content Goes Here</Text>
+        {/* Add more content as needed */}
       </ScrollView>
     </SafeAreaView>
   );

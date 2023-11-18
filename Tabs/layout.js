@@ -15,7 +15,7 @@ const screenOptions = {
     elevation: 0.1,
     backgroundColor: 'dodgerblue',
     width: '95%',
-    bottom: '2%',
+    bottom: '0.5%',
     left: '2%',
     borderRadius: '13',
   },
