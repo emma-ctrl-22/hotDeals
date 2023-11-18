@@ -17,7 +17,7 @@ const ShopScreen = () => {
       </View>
       <Text>{description}</Text>
       <ScrollView
-        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"dodgerblue" ,width:"100%"}}
+        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"dodgerblue" ,width:"100%",height:"87%",marginTop:"11%"}}
         horizontal={true} // Set the horizontal prop to true
         showsHorizontalScrollIndicator={false}//this makes the scroll inidcator invisible
       >
