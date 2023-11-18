@@ -21,8 +21,7 @@ const ShopScreen = () => {
         horizontal={true} // Set the horizontal prop to true
         showsHorizontalScrollIndicator={false}//this makes the scroll inidcator invisible
       >
-        <Text>ScrollView Content Goes Here</Text>
-        {/* Add more content as needed */}
+       
       </ScrollView>
     </SafeAreaView>
   );

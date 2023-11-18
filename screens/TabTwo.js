@@ -1,6 +1,6 @@
 import { View, Text,SafeAreaView, KeyboardAvoidingView, TextInput, TouchableOpacity, ScrollView, Image,Vide } from 'react-native';
 import React,{useState} from 'react';
-import {ArrowPathIcon ,UserIcon,ChevronDownIcon,AdjustmentsVerticalIcon,MagnifyingGlassIcon } from "react-native-heroicons/outline";
+import {ArrowPathIcon ,UserIcon,ChevronDownIcon,PencilSquareIcon,MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import HotDeal from '../components/HotDeal';
 
 const TabTwo = ({navigation}) => {
@@ -12,7 +12,7 @@ const TabTwo = ({navigation}) => {
            <TextInput 
            placeholder="Hot Deals "/>
           </View>
-          <AdjustmentsVerticalIcon color='dodgerblue'/>
+          <PencilSquareIcon onPress={()=>navigation.navigate('')} color='dodgerblue'/>
           <ArrowPathIcon color="dodgerblue"/>
       </View>
       <ScrollView contentContainerStyle={{
@@ -31,7 +31,7 @@ const TabTwo = ({navigation}) => {
             ImageUrl: 'https://deepcaves.world/images/deepcaves.jpg',
             Price: 'Buy all your grocies and snacks from us',
             productName: 'Closed',})} style={{width:"47%",height:"30%"}}>
-              
+
             <HotDeal ImageUrl="https://deepcaves.world/images/deepcaves.jpg"
              productName="Iphone 7"
              Price="1000"

@@ -23,7 +23,8 @@
     "react-native-heroicons": "^3.2.0",
     "react-native-reanimated": "~3.3.0",
     "react-native-vector-icons": "^10.0.2",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "expo-image-picker": "~14.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
