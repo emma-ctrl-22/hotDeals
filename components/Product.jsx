@@ -5,7 +5,8 @@ const Product = () => {
   return (
     <View>
       <Image/>
-      
+      <Text></Text>
+      <Text></Text>
     </View>
   )
 }

@@ -4,6 +4,8 @@ import { Ionicons } from '@expo/vector-icons'; // Assuming you are using Expo, c
 import ProductList from '../AdminScreens/ProductList';
 import AllRequest from '../AdminScreens/AllRequest';
 import AddProduct from '../AdminScreens/AddProduct';
+import { QueueListIcon } from 'react-native-heroicons/outline';
+import { InboxStackIcon,PlusCircleIcon } from 'react-native-heroicons/solid'
 
 
 const screenOptions = {
@@ -35,8 +37,7 @@ const AdminTabs = () => {
         component={ProductList}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-home" color=
-            'white' size={size} />
+            <QueueListIcon color="white"/>
           ),
         }}
       />
@@ -45,8 +46,7 @@ const AdminTabs = () => {
         component={AllRequest}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-flame" color=
-            "orange" size={size} />
+            <InboxStackIcon/>
           ),
         }}
       />
@@ -55,7 +55,7 @@ const AdminTabs = () => {
         component={AddProduct}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-cart" color="white" size={size} />
+            <PlusCircleIcon/>
           ),
         }}
       />
