@@ -24,7 +24,7 @@ const Login = ({ navigation }) => {
         style={{ display: 'flex', flexDirection: 'column', height: '40%', width: '90%', marginTop: '3%', justifyContent: 'space-evenly',alignItems:"center" }}>
         <TextInput style={styles.input} placeholder="Enter your Id" />
         <TextInput style={styles.input} placeholder="Enter Password" secureTextEntry={true} />
-        <TouchableOpacity onPress={() => navigation.navigate('AdminTabs')} style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'purple', height: '22%', borderRadius: 5 ,width:"98%"}}>
+        <TouchableOpacity onPress={() => navigation.navigate('Tabs')} style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'purple', height: '22%', borderRadius: 5 ,width:"98%"}}>
           <Text style={{ color: 'white', fontSize: 18 }}>Login</Text>
         </TouchableOpacity>
       </KeyboardAvoidingView>
