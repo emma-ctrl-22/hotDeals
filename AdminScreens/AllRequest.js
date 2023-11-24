@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, FlatList, SafeAreaView } from 'react-native'
+import React, { useState } from 'react'
 
 const AllRequest = () => {
+  const [setRequest,Request] = useState([]);
   return (
-    <View>
-      <Text>AllRequest</Text>
-    </View>
+    <SafeAreaView>
+      <FlatList/>
+    </SafeAreaView>
   )
 }
 

@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text,FlatList, SafeAreaView } from 'react-native'
+import React, { useState } from 'react'
 
 const ProductList = () => {
+  const [setProduct,product]= useState([]);
   return (
-    <View>
-      <Text>ProductList</Text>
-    </View>
+    <SafeAreaView>
+      <FlatList data={product}/>
+    </SafeAreaView>
   )
 }
 
