@@ -18,14 +18,15 @@ const Login = ({ navigation }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('http://154.160.7.229:3000/login', {
         email,
         password,
-      });
+      },{timeout: 100000});
 
       if (response.data.success) {
         // Navigate to the homepage or perform any desired action upon successful login
         navigation.navigate('Tabs');
+        console.log('Login successful!');
       } else {
         console.log('Login failed');
       }
