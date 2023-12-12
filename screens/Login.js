@@ -25,12 +25,7 @@ const Login = ({ navigation }) => {
 
       if (res.data.Status === "Success"){
         console.log('success')
-          if(res.data.role === "admin"){
-              navigation.navigate('Tabs')
-              console.log('redirects to admin dashboard')
-          }else{
-              navigation.navigate('AdminTabs')
-          }
+        navigation.navigate('Tabs');
       }
     } catch (error) {
       console.error('An error occurred during login:', error.message);
