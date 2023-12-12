@@ -23,12 +23,14 @@ const Login = ({ navigation }) => {
         password,
       },{timeout: 100000});
 
-      if (response.data.success) {
-        // Navigate to the homepage or perform any desired action upon successful login
-        navigation.navigate('Tabs');
-        console.log('Login successful!');
-      } else {
-        console.log('Login failed');
+      if (res.data.Status === "Success"){
+        console.log('success')
+          if(res.data.role === "admin"){
+              navigation.navigate('Tabs')
+              console.log('redirects to admin dashboard')
+          }else{
+              navigation.navigate('AdminTabs')
+          }
       }
     } catch (error) {
       console.error('An error occurred during login:', error.message);
