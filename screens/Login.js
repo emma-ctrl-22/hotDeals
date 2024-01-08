@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
         style={{ display: 'flex', flexDirection: 'column', height: '40%', width: '90%', marginTop: '3%', justifyContent: 'space-evenly',alignItems:"center" }}>
         <TextInput style={styles.input} placeholder="Enter your Id" value={email}
         onChangeText={(text) => setemail(text)} />
-        <TextInput style={styles.input} placeholder="Enter Password" secureTextEntry={true} value={password}
+        <TextInput style={styles.input} placeholder="Enter " secureTextEntry={true} value={password}
         onChangeText={(text) => setPassword(text)} />
         <TouchableOpacity onPress={handleSubmit} style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: 'purple', height: '22%', borderRadius: 5 ,width:"98%"}}>
           <Text style={{ color: 'white', fontSize: 18 }}>Login</Text>
