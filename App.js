@@ -11,6 +11,7 @@ import AddDeal from './screens/AddDeal'
 import AdminTabs from './AdminTabs/layout';
 
 const Stack = createStackNavigator();
+//
 
 export default function App() {
   return (
